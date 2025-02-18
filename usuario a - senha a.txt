@@ -1,0 +1,7 @@
+tomcat
+usuário: a
+senha: a
+
+postgres
+usuário: postgres
+senha: masterkey
