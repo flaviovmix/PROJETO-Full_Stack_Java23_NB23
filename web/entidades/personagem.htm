@@ -14,23 +14,50 @@
 <body>
     <nav></nav>
     <main class="container-xl">
-        <script>
-            for (i = 1; i < 8; i++) {
-                document.write(`
-                    <div class="card">
-                        <div class="corpo-card">
-                            <img src="../assets/img/personagens/${i}.png" alt="imagem da personagem 1">
-                        </div>
-                    </div>
-                `);
-            }
-        </script>
 
         <div class="card">
             <div class="corpo-card">
                 <img src="../assets/img/personagens/1.png" alt="imagem da personagem 1">
             </div>
+            <div class="card-footer">
+                <div>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                </div>
+                <div>
+                    <span>•</span>
+                    <span>•</span>
+                </div>
+            </div>
         </div>
+
+        <script>
+            for (i = 2; i < 10; i++) {
+                document.write(`
+                    <div class="card">
+                        <div class="corpo-card">
+                            <img src="../assets/img/personagens/${i}.png" alt="imagem da personagem 1">                          
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <span>•</span>
+                                <span>•</span>
+                                <span>•</span>
+                                <span>•</span>
+                                <span>•</span>
+                            </div>
+                            <div>
+                                <span>•</span>
+                                <span>•</span>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            }
+        </script>
     </main>
     <footer></footer>
 </body>
