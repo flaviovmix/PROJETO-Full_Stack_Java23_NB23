@@ -1,0 +1,54 @@
+.area-img-info {
+  position: relative;
+  overflow: hidden;
+  height: 90%;
+}
+
+.info-personagem {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: right .5s ease;
+  z-index: 2;
+}
+
+.area-img-info:hover .info-personagem {
+  right: 0;
+}
+
+.card .area-img-info .info-personagem {
+  position: absolute;
+  z-index: 3;
+}
+
+.area-img-info img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 2px; */
+  filter: blur(0px) grayscale(0%);
+  opacity: 100%;
+  transition: transform .85s ease, filter .85s ease, opacity .85s ease; 
+}
+
+.area-img-info:hover img,
+.area-img-info .info-personagem:hover ~ img {
+  transform: scale(1.2);
+  transform: scale(1.2) translateY(20px) rotateZ(-10deg);
+  filter: blur(7px);
+  /* filter: blur(2px) grayscale(80%); */
+}
+
+.card:hover {
+  /* Cresce e ajusta a posição para permanecer centralizado */
+  transform: scale(1.1);
+  z-index: 1;
+}

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-xl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.card {
+  border-radius: 3px;
+  width: 300px;
+  height: 500px;
+  transition: transform .9s ease;
+}
+
+.area-img-info .info-personagem h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.area-img-info .info-personagem h3 {
+  font-family: 'Courier New', Courier, monospace;
+}

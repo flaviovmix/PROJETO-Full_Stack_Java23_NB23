@@ -1,0 +1,35 @@
+table {
+  width: 95%;
+  border-collapse: collapse;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+}
+
+.info-personagem table strong {
+  font-weight: 600;
+}
+
+th {
+  text-align: center;
+  font-size: 1rem;
+}
+
+tr {
+  border: 1px solid #ffffff63;
+  border-left: none;
+  border-right: none;
+}
+
+td {
+  width: 50%;
+  padding: 7px 7px;
+}
+
+td:first-child {
+  text-align: right;  /* Alinha a coluna esquerda à direita */
+  font-weight: bold;
+}
+
+td:last-child {
+  text-align: left;  /* Alinha a coluna direita à esquerda */
+}
