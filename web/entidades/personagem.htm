@@ -2,66 +2,140 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/personagem.css">
-    <link rel="stylesheet" href="../assets/css/tema-claro.css">
-    <link rel="stylesheet" href="../assets/css/responsividade.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/personagem.css">
+  <link rel="stylesheet" href="../assets/css/responsividade.css">
 </head>
 
 <body>
-    <nav></nav>
-    <main class="container-xl">
+  <main class="container-xl">
+    <div class="card">
+      <div class="area-img-info">
+        <img class="img-principal" src="../assets/img/personagens/1.png" alt="imagem da personagem 1" />
+        <div class="info-personagem">
 
-        <div class="card">
-            <div class="corpo-card">
-                <img src="../assets/img/personagens/1.png" alt="imagem da personagem 1">
-                <img src="../assets/img/personagens/2.png" alt="imagem da personagem 1">
-            </div>
-            <div class="card-footer">
-                <div>
-                    <span>•</span>
-                    <span>•</span>
-                    <span>•</span>
-                    <span>•</span>
-                    <span>•</span>
-                </div>
-                <div>
-                    <span>•</span>
-                    <span>•</span>
-                </div>
-            </div>
+          <h2>Ana Paula</h2>
+
+
+
+          <table>
+
+            <tr>
+              <td><strong>Idade:</strong></td>
+              <td>22 anos</td>
+            </tr>
+            <tr>
+              <td><strong>Busto:</strong></td>
+              <td>145 cm</td>
+            </tr>
+            <tr>
+              <td><strong>Quadril:</strong></td>
+              <td>28 cm</td>
+            </tr>
+            <tr>
+              <td><strong>Hobbies:</strong></td>
+              <td>Dançar</td>
+            </tr>
+            <tr>
+              <td><strong>Altura:</strong></td>
+              <td>1,78 cm</td>
+            </tr>
+            <tr>
+              <td><strong>Peso:</strong></td>
+              <td>58 Kg</td>
+            </tr>
+
+          </table>
+          <h3>Brasileira</h3>
+          <div class="editar-excluir-dentro-info">
+            <a href="#"><span class="fa fa-pen"></span></a>
+            <a href="#"><span class="fa fa-trash"></span></a>
+          </div>
         </div>
+      </div>
+      <div class="area-links">
+        <div class="area-estrelas">
+          <a href="#"><span class="fa fa-star"></a></span>
+          <a href="#"><span class="fa fa-star"></a></span>
+          <a href="#"><span class="fa fa-star"></a></span>
+          <a href="#"><span class="fa fa-star"></a></span>
+          <a href="#"><span class="fa fa-star"></a></span>
+        </div>
+      </div>
+    </div>
 
-        <script>
-            for (i = 2; i < 10; i++) {
-                document.write(`
-                    <div class="card">
-                        <div class="corpo-card">
-                            <img src="../assets/img/personagens/${i}.png" alt="imagem da personagem 1">                          
-                        </div>
-                        <div class="card-footer">
-                            <div>
-                                <span>•</span>
-                                <span>•</span>
-                                <span>•</span>
-                                <span>•</span>
-                                <span>•</span>
-                            </div>
-                            <div>
-                                <span>•</span>
-                                <span>•</span>
-                            </div>
-                        </div>
-                    </div>
-                `);
-            }
-        </script>
-    </main>
-    <footer></footer>
+    <script>
+      // Loop for que se repete de i = 1 até i < 10 (ou seja, de 1 a 9)
+      for (let i = 2; i < 15; i++) {
+        document.write(` 
+    <div class="card">
+      <div class="area-img-info">
+        <img src="../assets/img/personagens/${i}.png" alt="imagem da personagem 1" />
+        <div class="info-personagem">
+
+            <h2>Ana Paula</h2>
+            
+
+          <table>
+
+            <tr>
+              <td><strong>Idade:</strong></td>
+              <td>22 anos</td>
+            </tr>
+            <tr>
+              <td><strong>Busto:</strong></td>
+              <td>145 cm</td>
+            </tr>
+            <tr>
+              <td><strong>Quadril:</strong></td>
+              <td>28 cm</td>
+            </tr>
+            <tr>
+              <td><strong>Hobbies:</strong></td>
+              <td>Dançar</td>
+            </tr>
+            <tr>
+              <td><strong>Altura:</strong></td>
+              <td>1,78 cm</td>
+            </tr>
+            <tr>
+              <td><strong>Peso:</strong></td>
+              <td>58 Kg</td>
+            </tr>
+
+          </table>
+          <h3>Brasileira</h3>
+<div class="editar-excluir-dentro-info">
+            <a href="#"><span class="fa fa-pen"></span></a>
+            <a href="#"><span class="fa fa-trash"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="area-links">
+        <div class="area-estrelas">
+          <a href="#"><span class="fa fa-star"></a>
+          <a href="#"><span class="fa fa-star"></a>
+          <a href="#"><span class="fa fa-star"></a>
+          <a href="#"><span class="fa fa-star"></a>
+          <a href="#"><span class="fa fa-star"></a>
+        </div>
+      </div>
+    </div>
+        `);
+      }
+      // A cada repetição, i aumenta +1 e um novo bloco HTML é escrito na página.
+      // A imagem agora usa ${i}, para mudar conforme o número da iteração.      
+    </script>
+  </main>
 </body>
 
 </html>

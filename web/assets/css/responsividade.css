@@ -1,45 +1,42 @@
-/* Telas extragrandes (ex: monitores 2K e 4K maiores) */
 @media (max-width: 2560px) {
     .container-xl {
-        width: 60%;
-        max-width: 1298px;
+      width: 90%;
+      max-width: 1800px;
     }
 }
 
-/* Telas muito grandes (ex: monitores ultrawide e 4K) */
 @media (max-width: 1920px) {
     .container-xl {
-        width: 75%;
-        max-width: 1298px;
+        width: 90%;
+        max-width: 1800px;
     }
 }
 
 @media (max-width: 1440px) {
     .container-xl {
         width: 90%;
+        
     }
 }
 
-
-/* Telas grandes (ex: desktops) */
 @media (max-width: 1024px) {
     .container-xl {
         width: 90%;
+        
     }
 }
-
-
 
 @media (max-width: 768px) {
     .container-xl {
         width: 95%;
+        
     }
 }
-
 
 @media (max-width: 480px) {
     .container-xl {
         width: 100%;
+        
     }
 
     .card {
