@@ -37,3 +37,28 @@ body {
 .area-img-info .info-personagem h3 {
   color: rgb(224, 224, 224);
 }
+
+
+
+.menu-principal ul {
+  background: #222;
+}
+
+
+.menu-principal ul li a {
+  color: #d1d1d1;
+}
+
+.menu-principal ul li a:hover {
+  color: #cecece;
+  background-color: rgb(46, 46, 46);
+}
+
+#btnTema {
+  background-color: #454545;
+  color: #cecece;
+}
+
+#btnTema:hover {
+  background-color: rgb(41, 41, 41);
+}
