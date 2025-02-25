@@ -1,17 +1,22 @@
 table {
-  width: 95%;
-  border-collapse: collapse;
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 0;
   font-family: var(--font-secundaria);
-  font-size: 1rem;
+  font-size: .8rem;
+  margin-top: -30px;
+  border: 1px solid rgb(137, 137, 137);
+  border-radius: 10px;
+  background-color: rgba(72, 72, 72, 0.100);
+  z-index: -1;
 }
 
 .info-personagem table strong {
   font-weight: 600;
 }
 
-th {
-  text-align: center;
-  font-size: 1rem;
+td, th {
+  border-top: 1px solid #ffffff63;
 }
 
 tr {
@@ -19,6 +24,14 @@ tr {
   border-left: none;
   border-right: none;
   color: var(--cor-dados-tabela-info-personagem);
+}
+
+table tr:first-child {
+  border-top: none;
+}
+
+table tr:last-child {
+  border-bottom: none;
 }
 
 td {
@@ -33,4 +46,9 @@ td:first-child {
 
 td:last-child {
   text-align: left;  /* Alinha a coluna direita à esquerda */
+}
+
+table .obs {
+  text-align: center;
+  font-weight: 500;
 }

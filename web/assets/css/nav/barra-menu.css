@@ -1,10 +1,7 @@
 .menu-principal ul {
-  border-top: 3px solid var(--cor-bordas);
-  border-bottom: 3px solid var(--cor-bordas);
-  box-shadow: 0px 0px 5px var(--cor-sombras);
   list-style-type: none;
-  margin: 5px;
-  padding: 0;
+  margin: 0;
+  padding: 5px;
   overflow: hidden;
   background: var(--cor-fundo-barra-menu);
 }
@@ -12,32 +9,48 @@
 .menu-principal .container-nav {
   width: 70%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-principal ul li {
   float: left; 
+  padding: 0 20px;
+  border: 1px solid white;
+  border-top: 0;  
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.menu-principal ul li:first-child {
+  border-right: 0;
+}
+
+.menu-principal ul li:last-child {
+  border-right: 1px solid white;
 }
 
 .menu-principal ul li a {
   display: inline-block;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
-  font-family: var(--font-principal);
-  font-size: 1.2rem;
+  font-family: var(--font-barra-menu);
+  font-size: 1rem;
+  height: 10%;
+  font-weight: 600;
   color: var(--cor-texto-link-menu);
 }
 
 .menu-principal ul li a:hover {
-  color: var(--cor-texto-link-menu-hover);
-  background-color: var(--cor-background-link-menu-hover);
+  text-decoration: underline;
 }
 
 #btnTema {
   float: right;
-  margin-top: 6px;
   width: 250px;
+  padding: 8px;
   border: none;
-  height: 40px;
   border-radius: 5px;
   font-family: var(--font-principal);
 

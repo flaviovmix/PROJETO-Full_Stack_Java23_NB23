@@ -26,8 +26,11 @@
   <nav class="menu-principal">
     <ul>
       <div class="container-nav">
-        <li><a href="#home">Estilo Cards</a></li>
-        <li><a href="#about">Estilo Tabela</a></li>
+        <div>
+          <li><a href="#home">NOVO REGISTRO</a></li>
+          <li><a href="#home">Estilo Cards</a></li>
+          <li><a href="#about">Estilo Tabela</a></li>
+        </div>
         <button id="btnTema" onclick="mudarTema()">Mudar para modo escuro</button>
       </div>
     </ul>
@@ -41,8 +44,81 @@
         <div class="area-img-info">
           <img class="img-principal" src="../assets/img/personagens/1.png" alt="imagem da personagem 1" />
           <div class="info-personagem">
+            <div class="img-nome-personagem">
+              <img class="imagem-circular" src="../assets/img/personagens/r-1.png" alt="">
+              <div>
+                <h2>Camila Turner Brown</h2>
+                <p>adora cozinhar</p>
+              </div>
+            </div>
 
-            <h2>Ana Paula</h2>
+              <table>
+
+                <tr>
+                  <td><strong>Idade:</strong></td>
+                  <td>22 anos</td>
+                </tr>
+                <tr>
+                  <td><strong>Busto:</strong></td>
+                  <td>145 cm</td>
+                </tr>
+                <tr>
+                  <td><strong>Quadril:</strong></td>
+                  <td>28 cm</td>
+                </tr>
+                <tr>
+                  <td><strong>Cintura:</strong></td>
+                  <td>36 cm</td>
+                </tr>
+                <tr>
+                  <td><strong>Altura:</strong></td>
+                  <td>1,78 cm</td>
+                </tr>
+                <tr>
+                  <td><strong>Peso:</strong></td>
+                  <td>58 Kg</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="obs">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                </tr>
+
+
+              </table>
+            <h3>Brasileira</h3>
+            <div class="editar-excluir-dentro-info">
+              <a href="#"><span class="fa fa-pen"></span></a>
+              <a href="#"><span class="fa fa-trash"></span></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="area-links">
+          <div class="area-estrelas">
+            <a href="#"><span class="fa fa-star"></a></span>
+            <a href="#"><span class="fa fa-star"></a></span>
+            <a href="#"><span class="fa fa-star"></a></span>
+            <a href="#"><span class="fa fa-star"></a></span>
+            <a href="#"><span class="fa fa-star"></a></span>
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        // Loop for que se repete de i = 1 até i < 10 (ou seja, de 1 a 9)
+        for (let i = 2; i < 15; i++) {
+          document.write(` 
+  <div class="card">
+        <div class="area-img-info">
+          <img class="img-principal" src="../assets/img/personagens/${i}.png" alt="imagem da personagem 1" />
+          <div class="info-personagem">
+            <div class="img-nome-personagem">
+              <img class="imagem-circular" src="../assets/img/personagens/r-${i}.png" alt="">
+              <div>
+                <h2>Camila Turner Brown</h2>
+                <p>adora cozinhar</p>
+              </div>
+            </div>
             <table>
 
               <tr>
@@ -75,6 +151,7 @@
             <div class="editar-excluir-dentro-info">
               <a href="#"><span class="fa fa-pen"></span></a>
               <a href="#"><span class="fa fa-trash"></span></a>
+
             </div>
           </div>
         </div>
@@ -88,64 +165,6 @@
           </div>
         </div>
       </div>
-
-      <script>
-        // Loop for que se repete de i = 1 até i < 10 (ou seja, de 1 a 9)
-        for (let i = 2; i < 15; i++) {
-          document.write(` 
-    <div class="card">
-      <div class="area-img-info">
-        <img src="../assets/img/personagens/${i}.png" alt="imagem da personagem 1" />
-        <div class="info-personagem">
-
-            <h2>Ana Paula</h2>
-            
-
-          <table>
-
-            <tr>
-              <td><strong>Idade:</strong></td>
-              <td>22 anos</td>
-            </tr>
-            <tr>
-              <td><strong>Busto:</strong></td>
-              <td>145 cm</td>
-            </tr>
-            <tr>
-              <td><strong>Quadril:</strong></td>
-              <td>28 cm</td>
-            </tr>
-            <tr>
-              <td><strong>Hobbies:</strong></td>
-              <td>Dançar</td>
-            </tr>
-            <tr>
-              <td><strong>Altura:</strong></td>
-              <td>1,78 cm</td>
-            </tr>
-            <tr>
-              <td><strong>Peso:</strong></td>
-              <td>58 Kg</td>
-            </tr>
-
-          </table>
-          <h3>Brasileira</h3>
-          <div class="editar-excluir-dentro-info">
-            <a href="#"><span class="fa fa-pen"></span></a>
-            <a href="#"><span class="fa fa-trash"></span></a>
-          </div>
-        </div>
-      </div>
-      <div class="area-links">
-        <div class="area-estrelas">
-          <a href="#"><span class="fa fa-star"></a>
-          <a href="#"><span class="fa fa-star"></a>
-          <a href="#"><span class="fa fa-star"></a>
-          <a href="#"><span class="fa fa-star"></a>
-          <a href="#"><span class="fa fa-star"></a>
-        </div>
-      </div>
-    </div>
         `);
         }
         // A cada repetição, i aumenta +1 e um novo bloco HTML é escrito na página.

@@ -1,6 +1,6 @@
 :root {
-  --font-principal: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  --font-secundaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --font-principal: Raleway,Arial,Helvetica,sans-serif;
+  --font-secundaria: Raleway,Arial,Helvetica,sans-serif;
 
   --cor-body-background: #222;
 
