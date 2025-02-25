@@ -7,7 +7,7 @@
 
 .info-personagem {
   position: absolute;
-  top: 0;
+  top: 0px;
   right: -100%;
   width: 100%;
   height: 100%;
@@ -58,6 +58,7 @@
   display: flex;
   width: 100%;
   padding: 15px;
+  /* margin-top: -50px; */
   justify-content: center;
   gap: 15px;
   align-items: center;
@@ -93,6 +94,7 @@
 
 .area-img-info .info-personagem h3 {
   color: var(--cor-cor-h3-info-personagem);
+  margin-bottom: 20px;
 }
 
 .area-img-info:hover .img-principal,
